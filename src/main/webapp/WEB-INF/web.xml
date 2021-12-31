@@ -3,59 +3,10 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
 						http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
-	id="LearningJavaEE5_ID" version="2.5">
-	<display-name>Learning Java EE 5</display-name>
+	id="Servlet25CRUD_ID" version="2.5">
+	<display-name>Servlet2.5 CRUD</display-name>
 
 	<welcome-file-list>
-		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>index.html</welcome-file>
 	</welcome-file-list>
-
-	<servlet>
-		<servlet-name>Hello Servlet</servlet-name>
-		<servlet-class>com.github.hyagomv.HelloServlet</servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>Hello Servlet</servlet-name>
-		<url-pattern>/hello</url-pattern>
-	</servlet-mapping>
-
-	<servlet>
-		<servlet-name>Hello Form Servlet</servlet-name>
-		<servlet-class>com.github.hyagomv.HelloFormServlet</servlet-class>
-	</servlet>
-
-	<servlet-mapping>
-		<servlet-name>Hello Form Servlet</servlet-name>
-		<url-pattern>/helloForm</url-pattern>
-	</servlet-mapping>
-
-	<servlet>
-		<servlet-name>Hello Error Servlet</servlet-name>
-		<servlet-class>com.github.hyagomv.HelloErrorServlet</servlet-class>
-	</servlet>
-	
-	<servlet-mapping>
-		<servlet-name>Hello Error Servlet</servlet-name>
-		<url-pattern>/helloError</url-pattern>
-	</servlet-mapping>
-	
-	<filter>
-		<filter-name>Hello Filter</filter-name>
-		<filter-class>com.github.hyagomv.HelloFilter</filter-class>
-	</filter>
-
-	<filter-mapping>
-		<filter-name>Hello Filter</filter-name>
-		<servlet-name>Hello Servlet</servlet-name>
-	</filter-mapping>
-
-	<listener>
-		<listener-class>com.github.hyagomv.HelloListener</listener-class>
-	</listener>
-
-	<error-page>
-		<exception-type>java.io.IOException</exception-type>
-		<location>/helloError</location>
-	</error-page>
-	
 </web-app>
