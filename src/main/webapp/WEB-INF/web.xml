@@ -19,19 +19,29 @@
 		<servlet-name>Hello Servlet</servlet-name>
 		<url-pattern>/hello</url-pattern>
 	</servlet-mapping>
-	
+
+	<servlet>
+		<servlet-name>Hello Form Servlet</servlet-name>
+		<servlet-class>com.github.hyagomv.HelloFormServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Hello Form Servlet</servlet-name>
+		<url-pattern>/helloForm</url-pattern>
+	</servlet-mapping>
+
 	<filter>
 		<filter-name>Hello Filter</filter-name>
 		<filter-class>com.github.hyagomv.HelloFilter</filter-class>
 	</filter>
-	
+
 	<filter-mapping>
 		<filter-name>Hello Filter</filter-name>
 		<servlet-name>Hello Servlet</servlet-name>
 	</filter-mapping>
-	
+
 	<listener>
 		<listener-class>com.github.hyagomv.HelloListener</listener-class>
 	</listener>
-	
+
 </web-app>
