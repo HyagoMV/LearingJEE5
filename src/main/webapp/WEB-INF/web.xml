@@ -29,4 +29,9 @@
 		<filter-name>Hello Filter</filter-name>
 		<servlet-name>Hello Servlet</servlet-name>
 	</filter-mapping>
+	
+	<listener>
+		<listener-class>com.github.hyagomv.HelloListener</listener-class>
+	</listener>
+	
 </web-app>
