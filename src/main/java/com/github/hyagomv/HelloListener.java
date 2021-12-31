@@ -12,7 +12,7 @@ public class HelloListener implements ServletRequestListener {
 
 	@Override
 	public void requestDestroyed(ServletRequestEvent sre) {
-
+		return;
 	}
 
 }

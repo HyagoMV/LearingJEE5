@@ -13,6 +13,7 @@ public class HelloFilter implements Filter {
 
 	@Override
 	public void init(FilterConfig filterConfig) throws ServletException {
+		return;
 	}
 
 	@Override
@@ -25,6 +26,7 @@ public class HelloFilter implements Filter {
 
 	@Override
 	public void destroy() {
+		return;
 	}
 
 }
