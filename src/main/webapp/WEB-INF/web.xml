@@ -14,7 +14,6 @@
 		<servlet-name>Hello Servlet</servlet-name>
 		<servlet-class>com.github.hyagomv.HelloServlet</servlet-class>
 	</servlet>
-
 	<servlet-mapping>
 		<servlet-name>Hello Servlet</servlet-name>
 		<url-pattern>/hello</url-pattern>
@@ -30,6 +29,16 @@
 		<url-pattern>/helloForm</url-pattern>
 	</servlet-mapping>
 
+	<servlet>
+		<servlet-name>Hello Error Servlet</servlet-name>
+		<servlet-class>com.github.hyagomv.HelloErrorServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>Hello Error Servlet</servlet-name>
+		<url-pattern>/helloError</url-pattern>
+	</servlet-mapping>
+	
 	<filter>
 		<filter-name>Hello Filter</filter-name>
 		<filter-class>com.github.hyagomv.HelloFilter</filter-class>
@@ -44,4 +53,9 @@
 		<listener-class>com.github.hyagomv.HelloListener</listener-class>
 	</listener>
 
+	<error-page>
+		<exception-type>java.io.IOException</exception-type>
+		<location>/helloError</location>
+	</error-page>
+	
 </web-app>

@@ -13,8 +13,9 @@ public class HelloServlet extends HttpServlet {
 
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		response.getOutputStream().write("Hello World Servlet!".getBytes());
-		response.flushBuffer();
+		throw new IOException();
+//		response.getOutputStream().write("Hello World Servlet!".getBytes());
+//		response.flushBuffer();
 	}
 
 }
