@@ -12,9 +12,9 @@ public class HelloServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	@Override
-	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		resp.getOutputStream().write("Hello World Servlet!".getBytes());
-		resp.flushBuffer();
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		response.getOutputStream().write("Hello World Servlet!".getBytes());
+		response.flushBuffer();
 	}
 
 }
